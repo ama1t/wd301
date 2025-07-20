@@ -1,3 +1,4 @@
+import React from "react";
 import TaskCard from "./TaskCard";
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
         Website)
       </p>
       <div className="flex gap-8">
-        <div className="bg-gray-50 rounded-lg border p-4 w-72">
+        <div className="bg-gray-50 rounded-lg border p-4 w-72 shadow-xl">
           <h1 className="text-lg font-bold text-center mb-4">Pending</h1>
           <TaskCard
             task="Pending"
@@ -26,7 +27,7 @@ function App() {
             + New Task
           </button>
         </div>
-        <div className="bg-gray-50 rounded-lg border p-4 w-72">
+        <div className="bg-gray-50 rounded-lg border p-4 w-72 shadow-xl">
           <h1 className="text-lg font-bold text-center mb-4">Done</h1>
           <TaskCard
             task="done"
