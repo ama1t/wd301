@@ -11,18 +11,8 @@ function App() {
       <div className="flex gap-8">
         <div className="bg-gray-50 rounded-lg border p-4 w-72 shadow-xl">
           <h1 className="text-lg font-bold text-center mb-4">Pending</h1>
-          <TaskCard
-            task="Pending"
-            title="Build website"
-            dueDate="17th"
-            assigneeName="Alice"
-          />
-          <TaskCard
-            task="Pending"
-            title="Fix bugs"
-            dueDate="18th"
-            assigneeName="Bob"
-          />
+          <TaskCard title="Build website" dueDate="17th" assigneeName="Alice" />
+          <TaskCard title="Fix bugs" dueDate="18th" assigneeName="Bob" />
           <button className="w-full mt-2 bg-gray-300 hover:bg-gray-200 text-gray-600 py-2 rounded-md">
             + New Task
           </button>
@@ -30,16 +20,12 @@ function App() {
         <div className="bg-gray-50 rounded-lg border p-4 w-72 shadow-xl">
           <h1 className="text-lg font-bold text-center mb-4">Done</h1>
           <TaskCard
-            task="done"
             title="Update documentation"
-            dueDate="15th"
             completedAtDate="15th"
             assigneeName="Charlie"
           />
           <TaskCard
-            task="done"
             title="Deploy to production"
-            dueDate="16th"
             completedAtDate="15th"
             assigneeName="Dave"
           />
